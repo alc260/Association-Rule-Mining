@@ -1,25 +1,13 @@
-# Repository: template.project3
-Template for Project #3 -- Association Rule Mining
-
-> Course: **[CS 1656 - Introduction to Data Science](http://cs1656.org)** (CS 2056) -- Spring 2020    
-> Instructor: [Alexandros Labrinidis](http://labrinidis.cs.pitt.edu) and Evangelos Karageorgos  
-> Teaching Assistant: Xiaoting Li  
->
-> Assignment: #3  
-> Released: March 2, 2020  
-> **Due:      March 23, 2020**
-
-### Description
-This is the **third assignment** for the CS 1656 -- Introduction to Data Science (CS 2056) class, for the Spring 2020 semester.
+# Association Rule Mining Project
 
 ### Goal
 The goal of this assignment is for you to gain familiarity with association rule mining and (in the process) to also advance your Python skills.
 
 ---
 
-### What to do -- arm.py
-In this assignment you are asked to implement a simplified version of the A-Priori **a**ssociation **r**ule **min**ing algorithm, in Python.
-You should name your program `arm.py`. It should be called as follows:
+### arm.py description
+arm.py a simplified version of the A-Priori **a**ssociation **r**ule **min**ing algorithm, in Python.
+It should be called as follows:
 
 `python arm.py input_filename output_filename min_support_percentage min_confidence`
 
@@ -109,53 +97,3 @@ The above process generates all the frequent itemsets, i.e., VFI(i), for 1 <= i 
 and compute their support and confidence. Note that the support of all these rules is the same as the support of the frequent itemset from which they came, i.e., {A,B,C}.
 
 ---
-
-### Important notes about grading
-It is absolutely imperative that your python program:  
-* runs without any syntax or other errors (using Python 3) -- we will run it using the following command:  
-`python3 arm.py ...`  
-* strictly adheres to the format specifications for input and output, as explained above.     
-
-Failure in any of the above will result in **severe** point loss.
-
-
-### Allowed Python Libraries
-You are allowed to use the following Python libraries:
-```
-argparse
-collections
-csv
-glob
-itertools
-math
-os
-pandas
-re
-requests
-string
-sys
-```
-More info on the itertools library at
-[https://docs.python.org/3/library/itertools.html](https://docs.python.org/3/library/itertools.html).
-
-If you would like to use any other libraries, you must ask permission by Friday, March 6, 2020, using [canvas](http://cs1656.org).
-
----
-
-### How to submit your assignment
-For this assignment, you must use the repository that was created for you after visiting the classroom link. You need to create the file `arm.py` as described above, and add other files that are needed for running your program. You need to make sure to commit your code to the repository provided.
-
-The due date is **Monday, March 23, 2020 (23:59pm)**  
-
-You can submit your assignment:
-* up to **24 hours later, for -5 points**, and  
-* up to **48 hours later, for -15 points**.  
-
-Our assumption is that everybody will submit on the first deadline. If you want us to grade a late submission, you need to email us at `cs1656-staff@cs.pitt.edu`
-
-
-### About your github account
-It is very important that:  
-* Your github account can do **private** repositories. If this is not already enabled, you can do it by visiting <https://education.github.com/>  
-* You use the same github account for the duration of the course.  
-* You use the github account that you specified on tophat.    
